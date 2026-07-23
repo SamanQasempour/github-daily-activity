@@ -1,0 +1,15 @@
+[Unit]
+Description=GitHub Daily Activity - Boot Logger
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/github-daily-activity/boot-log.sh
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+WorkingDirectory=/opt/github-daily-activity
+
+[Install]
+WantedBy=multi-user.target

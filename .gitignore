@@ -1,0 +1,22 @@
+# Log files (generated at runtime)
+history.log
+activity.log
+error.log
+system.log
+
+# System files
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
